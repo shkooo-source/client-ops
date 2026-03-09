@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/client_ops
+    username: clientops
+    password: clientops123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+  # JPA(Hibernate) 관련 설정
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
