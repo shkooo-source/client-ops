@@ -10,8 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // 모든 경로(/**)에 대해
         registry.addMapping("/**")
-            // React 개발 서버 주소(5173)로부터의 요청을 허용
-            .allowedOrigins("http://localhost:5173")
+            // .allowedOrigins("http://localhost:5173") // React 개발 서버 주소(5173)로부터의 요청을 허용
+            .allowedOrigins("https://client-ops-dashboard.netlify.app") // Netlify 주소로 변경
             // 허용할 HTTP 메서드들
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             // 모든 헤더 허용
